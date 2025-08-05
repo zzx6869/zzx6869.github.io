@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>动漫主页 | 小黯战的小屋TT</title>
+    <title>ACG 总览 | 小黯战的小屋TT</title>
     <meta name="author" content="小黯战丿" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -173,7 +173,7 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>动漫主页</h1>
+        <h1>ACG 总览</h1>
     </div>
     <div class="info">
         <span class="date">
@@ -187,15 +187,7 @@
     </div>
     
     <div class="content" v-pre>
-        <meta http-equiv="refresh" content="0;url=/categories/acg/">
-欢迎来到我的动漫主页！  
-这里收录了我喜欢的动漫相关内容：
-
-<ul>
-<% site.pages.filter(page => page.path.startsWith('acg/') && page.path !== 'acg/index.html').forEach(page => { %>
-  <li><a href="<%- url_for(page.path) %>"><%= page.title %></a></li>
-<% }) %>
-</ul>
+        <p>欢迎来到 ACG 页面！这里是总介绍。</p>
 
     </div>
     

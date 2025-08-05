@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>tags | 小黯战的小屋TT</title>
+    <title>Tags | 小黯战的小屋TT</title>
     <meta name="author" content="小黯战丿" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -42,13 +42,8 @@
 
 
 
-
-
-<script src="https://s4.zstatic.net/ajax/libs/twikoo/1.6.31/twikoo.all.min.js"></script>
-
-
-
 <link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/acg_page.css" />
 
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body>
@@ -93,9 +88,9 @@
             <span>&ensp;Tags</span>
         </a>
         
-        <a href="/categories/acg/">
+        <a href="/acg_page/">
             <i class="fa-solid fa-gamepad fa-fw"></i>
-            <span>&ensp;acg</span>
+            <span>&ensp;ACG</span>
         </a>
         
     </nav>
@@ -152,12 +147,12 @@
                     </div>
                 </a>
                 
-                <a href="/categories/acg/">
+                <a href="/acg_page/">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-gamepad fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">acg</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">ACG</div>
                     </div>
                 </a>
                 
@@ -170,34 +165,45 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div class="article">
-    <div>
-        <h1>tags</h1>
-    </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2025/8/3
+            <div id="archives">
+    
+    <div class="categories-tags">
+        
+        
+        
+        <span>
+            <a href="/tags/acg/" style="background: #ffa2c4">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                acg
+            </a>
+        </span>
+        
+        
+        
+        <span>
+            <a href="/tags/A/" style="background: #00a596">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                A
+            </a>
+        </span>
+        
+        
+        
+        <span>
+            <a href="/tags/B/" style="background: #ffa2c4">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                B
+            </a>
         </span>
         
         
     </div>
-    
-    <div class="content" v-pre>
-        
-    </div>
-    
-    
-    
-    
-    
-    
-    <div id="comment">
-        <div id="twikoo-container"></div>
-    </div>
-    
     
 </div>
 
@@ -229,22 +235,6 @@
         
     </div>
     <script src="/js/main.js"></script>
-    
-    
-
-
-
-<script>
-    twikoo.init({
-        el: "#twikoo-container",
-        envId: "",
-        region: "",
-        path: location.pathname,
-        lang: "",
-    })
-</script>
-
-
     
 </body>
 </html>
