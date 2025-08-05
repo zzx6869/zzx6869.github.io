@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>动漫主页 | 小黯战的小屋TT</title>
+    <title>我最喜欢的动漫 | 小黯战的小屋TT</title>
     <meta name="author" content="小黯战丿" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -172,7 +172,7 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>动漫主页</h1>
+        <h1>我最喜欢的动漫</h1>
     </div>
     <div class="info">
         <span class="date">
@@ -186,12 +186,7 @@
     </div>
     
     <div class="content" v-pre>
-        <p>欢迎来到我的动漫主页！<br>这里收录了我喜欢的动漫相关内容：</p>
-<ul>
-<% site.pages.filter(page => page.path.startsWith('acg/') && page.path !== 'acg/index.html').forEach(page => { %>
-  <li><a href="<%- url_for(page.path) %>"><%= page.title %></a></li>
-<% }) %>
-</ul>
+        <p>这里是我最喜欢的动漫介绍内容……</p>
 
     </div>
     
