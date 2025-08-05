@@ -93,7 +93,7 @@
             <span>&ensp;Tags</span>
         </a>
         
-        <a href="/acg">
+        <a href="/categories/acg/">
             <i class="fa-solid fa-gamepad fa-fw"></i>
             <span>&ensp;acg</span>
         </a>
@@ -152,7 +152,7 @@
                     </div>
                 </a>
                 
-                <a href="/acg">
+                <a href="/categories/acg/">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-gamepad fa-fw"></i>
@@ -186,7 +186,10 @@
     </div>
     
     <div class="content" v-pre>
-        <p>欢迎来到我的动漫主页！<br>这里收录了我喜欢的动漫相关内容：</p>
+        <meta http-equiv="refresh" content="0;url=/categories/acg/">
+欢迎来到我的动漫主页！  
+这里收录了我喜欢的动漫相关内容：
+
 <ul>
 <% site.pages.filter(page => page.path.startsWith('acg/') && page.path !== 'acg/index.html').forEach(page => { %>
   <li><a href="<%- url_for(page.path) %>"><%= page.title %></a></li>
